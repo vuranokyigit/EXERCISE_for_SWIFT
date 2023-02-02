@@ -5,6 +5,8 @@
 //otherwise, print"you will be forever alone."
 //call the function so that you get the message showing up in the console when you run the code
 
+
+//IF-ELSE STATEMENT
 import UIKit
 
 func loveCalculator(){
@@ -18,4 +20,30 @@ func loveCalculator(){
     }
 }
 loveCalculator()
+
+
+//SWITCH STATEMENT
+func loveCalculator(){
+    
+    let wholeNumbers = Int.random(in: 0...100)
+    
+    switch wholeNumbers {
+        
+    case (81...100):
+        print("you love each other like kanye loves kanye")
+    
+    case (41..<81):
+        print("you go together like coke and mentos")
+        
+    case (...40):
+        print("you will be forever alone.")
+        
+    default:
+        print("error")
+        break
+    }
+    
+}
+loveCalculator()
+
 
