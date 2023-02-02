@@ -9,10 +9,13 @@ import UIKit
 
 func loveCalculator(){
     let wholeNumbers = Int.random(in: 0...100)
-    if(wholeNumbers == 100){
+    if(wholeNumbers > 80){
         print("you love each other like kanye loves kanye")
+    }else if(wholeNumbers <= 80) && ( wholeNumbers >= 40){
+        print("you go together like coke and mentos")
     }else{
         print("you will be forever alone.")
     }
 }
 loveCalculator()
+
